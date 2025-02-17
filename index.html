@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahmed store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">products</a></li>
+        
+    </ul>
+    <h1>Ahmed Store</h1>
+   
+    <form method="post">
+      <div><label for="user">user name</label>
+        <input id="user" type="text" name="user name" placeholder="your email or phone number"></div>
+        
+        <div><label for="pass">password</label>
+           <input id="pass" type="password" name="password" placeholder="password"></div>
+        <div><input type="submit" value="login">
+        <input type="button" value="register">
+        <input type="reset" value="reset">
+        </div>
+       
+
+    </form>
+    <hr>
+      <!-- gadwal -->
+      <table border="1">
+          <!-- 3amood -->
+          <tr>
+              <!-- sfoof momyza -->
+              <th>ahmed</th>
+              <th>karim</th>
+              <th>mohamed</th>
+              <!-- sfoof -->
+          </tr>
+          <tr>
+              <!-- 3amood -->
+              <td>10</td>
+              <td>15</td>
+              <td>20</td>
+              <!-- damg el a3mda -->
+              
+          </tr>
+          <tr>
+              <!-- 3amood -->
+              <td>30</td>
+              <td>40</td>
+              <td>50</td>
+              <!-- damg el a3mda -->
+              
+          </tr>
+          <!-- damg el a3mda -->
+          
+        <!-- 3amood -->
+            <tr>
+                <!-- sfoof momyza -->
+                 <th>ahmed</th>
+                 <th>karim</th>
+                 <th>mohamed</th>
+               <!-- sfoof -->
+                <tr>
+                    <!-- 3amood -->
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <!-- damg el a3mda -->
+                    
+                </tr>
+                <tr>
+                    <!-- 3amood -->
+                    <td>30</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <!-- damg el a3mda -->                           
+                            
+            </tr>
+            <tr>
+              <td aria-flowto="2">total</td>
+              <td colspan="2">140</td>
+            </tr>
+        </table>
+        <script>
+            const form = document.querySelector('form');
+            const table = document.querySelector('table');
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                const user = document.getElementById('user').value;
+                const pass = document.getElementById('pass').value;
+                if(user === 'ahmed' && pass === '123'){
+                    
+                    
+
+                    alert('welcome');
+                }else{
+                    alert('wrong user name or password');
+                }
+            });
+            form.addEventListener('reset', function(e){
+                e.preventDefault();
+                alert('are you sure you want to reset');
+            });
+        </script>
+        
+</body>
+</html>
